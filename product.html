@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Heritage</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <!--Header-->
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="images/logo1.png " width="125px">
+            </div>
+
+            <nav>
+                <ul id="menu-list">
+                    <li id="about">About</a></li>
+                    <li id="contact">Contact</a></li>
+                    <li id="SignOut">Logout</li>
+                </ul>
+            </nav>
+
+            <!-- <img src="images/cart.png" width="30px" height="30px"> -->
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <div class="modal2">
+            <div class="close2">
+                +
+            </div>
+            <form id="bidForm">
+                <h2>Make Your Bid</h2>
+                <!-- <input type="text" id="Pname" required placeholder="Enter Product Name You Want To Bid"><br> -->
+                <input type="text" id="num" placeholder="Enter Product Number" required><br>
+                <input type="number" id="bid" placeholder="Enter Your Bid Number" required><br>
+                <input type="text" id="biddername" placeholder="Enter Your Name" required><br>
+                <input type="number" id="price" placeholder="Enter your Bid Value" required><br>
+                <input type="button" id="subm" value="submit">
+            </form>
+        </div>
+        <div class="modal3">
+            <div class="close3">
+                +
+            </div>
+            <div class="data">
+                <br>
+                <h1 id="heading">Heritage Auction Company</h1><br>
+                <span id="intro"> I have built this website as my VI sem mini project and in this website I have tried
+                    to
+                    demonstrate the working of an online auction website.</span>
+                <br><br>
+                <h2>Technologies Used for Front-End:</h2><br><br>
+                <h3>1: HTML(Hyper Text Markup Language) - <span>It is used to describes the structure of a Web
+                        page.</span></h3><br>
+                <h3>2: CSS(Cascading Style Sheets) - <span>It is used to describes how HTML elements are to be displayed
+                        on screen, paper, or in other media.</span></h3><br>
+                <h3>3: JS(JavaScript) - <span>It is used to program the behavior of web pages.</span></h3><br>
+                <br><br>
+                <h2>Technologies Used for Back-End:</h2><br><br>
+                <h3>1: Firebase - <span>Firebase provides detailed documentation and cross-platform SDKs to help you
+                        build and ship apps on Android, iOS, &nbsp;and the web.</span></h3><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pop-up1">
+        <div class="modal4">
+            <div class="close4">
+                +
+            </div>
+                <div class="content">
+                    <h2>Contact Details</h2><br>
+                    <h3>Developed By : </h3>Rahul Pandey<br><br>
+                    <h3>Mobile Number : </h3>+917351297195<br><br>
+                    <h3>Mail me at : </h3><a href="mailto:rp035439.com" style="color: black;">rp035439@gmail.com</a><br><br>
+                </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpeg" width="250px" height="250px">
+                <h4 id="p1">White printed T-shirt</h4>
+                <p><br>Product Number : P1<br><br>
+                    Number of Bids : <span id="numP1"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP1"></span><br><br>
+                    <span id="time1"></span><br><br>
+                </p>
+                <button onclick="make()" id="BidBtn1">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-2.jpeg" width="250px" height="250px">
+                <h4 id="p2">White Audi Q7</h4>
+                <p><br>Product Number : P2<br><br>
+                    Number of Bids : <span id="numP2"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP2"></span><br><br>
+                    <span id="time2"></span><br><br>
+                </p>
+                <button onclick="make()" id="BidBtn2">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-3.webp" width="250px" height="250px">
+                <h4 id="p3">Casio Enticer Men watch </h4>
+                <p><br>Product Number : P3<br><br>
+                    Number of Bids : <span id="numP3"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP3"></span><br><br>
+                    <span id="time3"></span><br><br>
+                </p>
+                <button onclick="make()" id="BidBtn3">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-4.jpeg" width="250px" height="250px">
+                <h4 id="p4">Skechers Black Sneakers</h4>
+                <p><br>Product Number : P4<br><br>
+                    Number of Bids : <span id="numP4"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP4"></span><br><br>
+                    <span id="time4"></span><br><br>
+                </p>
+                <button onclick="make()" id="BidBtn4">Make A Bid</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="Product images/5.jpg" width="250px" height="250px">
+                <h4 id="p5">White Adidas Hoddie</h4>
+                <p><br>Product Number : P5<br><br>
+                    Number of Bids : <span id="numP5"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP5"></span><br><br>
+                    <span id="time5"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn5">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/7.jpeg" width="250px" height="250px">
+                <h4 id="p6">Bullet Standard 350</h4>
+                <p><br>Product Number : P6<br><br>
+                    Number of Bids : <span id="numP6"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP6"></span><br><br>
+                    <span id="time6"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn6">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/1.jpg" width="250px" height="250px">
+                <h4 id="p7">Casio Enticer Men watch </h4>
+                <p><br>Product Number : P7<br><br>
+                    Number of Bids : <span id="numP7"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP7"></span><br><br>
+                    <span id="time7"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn7">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/4.jpg" width="250px" height="250px">
+                <h4 id="p8">Nike Air Jordans</h4>
+                <p><br>Product Number : P8<br><br>
+                    Number of Bids : <span id="numP8"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP8"></span><br><br>
+                    <span id="time8"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn8">Make A Bid</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="Product images/7.jpg" width="250px" height="250px">
+                <h4 id="p9">Red printed T-shirt </h4>
+                <p><br>Product Number : P9<br><br>
+                    Number of Bids : <span id="numP9"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP9"></span><br><br>
+                    <span id="time9"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn9">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/16.jpeg" width="250px" height="250px">
+                <h4 id="p10">Red Tesla Roadster </h4>
+                <p><br>Product Number : P10<br><br>
+                    Number of Bids : <span id="numP10"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP10"></span><br><br>
+                    <span id="time10"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn10">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/6.jpg" width="250px" height="250px">
+                <h4 id="p11">Casio Edifice Men watch </h4>
+                <p><br>Product Number : P11<br><br>
+                    Number of Bids : <span id="numP11"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP11"></span><br><br>
+                    <span id="time11"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn11">Make A Bid</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Product images/15.jpg" width="250px" height="250px">
+                <h4 id="p12">Skechers Grey Sneakers</h4>
+                <p><br>Product Number : P12<br><br>
+                    Number of Bids : <span id="numP12"></span><br><br>
+                    Last Price : &#x20b9; <span id="valueP12"></span><br><br>
+                    <span id="time12"></span><br><br>
+                </p>
+
+                <button onclick="make()" id="BidBtn12">Make A Bid</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fcol-1">
+                    <h3>Download Our App</h3>
+                    <p>Download the app for android and ios mobiles.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" width="165px">
+                        <img src="images/app-store.png" width="165px">
+                    </div>
+                </div>
+
+                <div class="fcol-2">
+                    <img src="images/logo-1-white.png" width="200px" height="200px">
+                    <p>Our Purpose Is To Provide You <br>Best Online Auction Experience.</p>
+                </div>
+
+                <div class="fcol-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Join Affiliate</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="fcol-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100005620965075"
+                                target="_blank">Facebook<a></a></li>
+                        <li><a href="https://www.instagram.com/__rahul_pandey__/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahul-pandey-a63a89217/" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+
+<!-- JS FILES -->
+<script type="module" src="firebase1.js"> </script>
+<script src="myscript.js"></script>
+
+<script>
+    //function for closing about pop-up
+    document.getElementById('about').addEventListener('click', function () {
+        document.querySelector('.pop-up').style.display = "flex";
+        document.querySelector('.modal3').style.display = "flex";
+        document.body.classList.add("stop-scrolling");
+    });
+    //function for closing about pop-up
+    document.querySelector('.close3').addEventListener('click', function () {
+        document.querySelector('.pop-up').style.display = 'none';
+        document.querySelector('.modal3').style.display = 'none';
+        document.body.classList.remove("stop-scrolling");
+
+    });
+    //function for closing opening pop-up
+    document.getElementById('contact').addEventListener('click', function () {
+        document.querySelector('.pop-up1').style.display = "flex";
+        document.querySelector('.modal4').style.display = "flex";
+        document.body.classList.add("stop-scrolling");
+    });
+    //function for closing contact pop-up
+    document.querySelector('.close4').addEventListener('click', function () {
+        document.querySelector('.pop-up1').style.display = 'none';
+        document.querySelector('.modal4').style.display = 'none';
+        document.body.classList.remove("stop-scrolling");
+    });
+
+    //function for closing the make bid pop-up
+    document.querySelector('.close2').addEventListener('click', function () {
+        document.querySelector('.pop-up').style.display = 'none';
+        document.querySelector('.modal2').style.display = 'none';
+        document.body.classList.remove("stop-scrolling"); //Page will start scrolling
+    });
+
+    //timer
+    var dest = new Date("Jul 1, 2022 22:30:00").getTime();
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+        var diff = dest - now;
+        if (Number(diff) < 0) {
+            for (var i = 1; i < 13; i++) {
+                document.getElementById("time" + i).display = "none";
+                document.getElementById("BidBtn" + i).disabled = true;
+                // document.getElementById("BidBtn" + i).innerHTML = "Bidding Closed";
+            }
+        }
+        else {
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hrs = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var sec = Math.floor((diff % (1000 * 60)) / 1000);
+
+            for (var i = 1; i < 13; i++) {
+                document.getElementById("time" + i).innerHTML = "Time Left : " + days + "d, " + hrs + "h: " + min + "m: " + sec + "s";
+            }
+        }
+    }, 1000);
+</script>
+
+</html>

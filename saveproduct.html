@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Save product| HERITAGE</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            width: 200px;
+            text-align: center;
+            border: 2px solid;
+            font-size: large;
+        }
+
+        #subm {
+            width: 220px;
+            background-color: #ff523b;
+            border: none;
+            color: white;
+        }
+
+        form {
+            padding: 20px;
+            border: 5px solid #ff523b;
+        }
+
+        h1 {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <u>ENTER PRODUCT DETAILS YOU WANT TO STORE IN DATABASE</u><br><br>
+    </h1>
+    <form>
+        <input type="text" id="Pname" required placeholder="Enter Product Name"><br>
+        <input type="text" id="num" placeholder="Enter Product Number" required><br>
+        <input type="text" id="biddername" placeholder="Enter Bidder Name" required><br>
+        <input type="number" id="price" placeholder="Enter Product Price" required><br>
+        <input type="button" id="subm" value="submit">
+        <input type="number" id="bid" placeholder="Enter Initial Bid" value="0" required style="display: none;"><br>
+    </form>
+</body>
+
+<script type="module" src="firebase2.js">
+</script>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage | Auction Company</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>                <!-- Used for importing font style -->
+
+</head>
+
+<body style="background-color: #fde1e1;">
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="images/logo1.png " width="125px">
+                </div>
+
+                <nav>
+                    <ul id="menu-list">
+                        <li id="about">About</li>
+                        <li id="contact">Contact</li>
+                        <li id="login">LogIn</li>
+                        <li id="signup">SignUp</li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <h1>Bid Win Repeat!</h1>
+                    <p>
+                        We invite you to experience the fire<br>
+                        that brings us all together.
+                    </p>
+                    <a href="index.html#categories" class="btn" onclick="show()">Explore Now &#8594;</a>
+                </div>
+
+                <div class="col-2">
+                    <img src="images/image1.jpeg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <div class="modal">
+            <div class="close">
+                +
+            </div>
+            <form>
+                <h2>Welcome Back Bidder!</h2>
+                <input type="email" id="lemail" placeholder="Enter your Email">
+                <input type="password" id="lpass" placeholder="Enter your Password">
+                <input type="button" id="logIn" value="Log in">
+            </form>
+        </div>
+        <div class="modal1">
+            <div class="close1">
+                +
+            </div>
+            <form>
+                <h2>Welcome Onboard Bidder!</h2>
+                <input type="name" id="fname" placeholder="Enter your Name">
+                <input type="email" id="femail" placeholder="Enter your Email">
+                <input type="password" id="fpass" placeholder="Enter your Password">
+                <input type="button" id="signUp" value="Sign Up">
+            </form>
+        </div>
+        <div class="modal3">
+            <div class="close3">
+                +
+            </div>
+            <div class="data">
+                <br><h1 id="heading">Heritage Auction Company</h1><br>
+               <span id="intro"> I have built this website as my VI sem mini project and in this website I have tried to
+                demonstrate the working of an online auction website.</span>
+                <br><br><h2>Technologies Used for Front-End:</h2><br><br>
+                <h3>1: HTML(Hyper Text Markup Language) - <span>It is used to describes the structure of a Web page.</span></h3><br>
+                <h3>2: CSS(Cascading Style Sheets) - <span>It is used to describes how HTML elements are to be displayed on screen, paper, or in other media.</span></h3><br>
+                <h3>3: JS(JavaScript) - <span>It is used to program the behavior of web pages.</span></h3><br>
+                <br><br><h2>Technologies Used for Back-End:</h2><br><br>
+                <h3>1: Firebase - <span>Firebase provides detailed documentation and cross-platform SDKs to help you build and ship apps on Android, iOS, &nbsp;and the web.</span></h3><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pop-up1">
+        <div class="modal4">
+            <div class="close4">
+                +
+            </div>
+                <div class="content">
+                    <h2>Contact Details</h2><br>
+                    <h3>Developed By : </h3>Rahul Pandey<br><br>
+                    <h3>Mobile Number : </h3>+917351297195<br><br>
+                    <h3>Mail me at : </h3><a href="mailto:rp035439.com" style="color: black;">rp035439@gmail.com</a><br><br>
+                </div>
+        </div>
+    </div>
+
+    <!--Products We Deal in-->
+    <div id="categories" style="display: none;">
+        <div class="small-container">
+            <h2 class="title">Products We Deal In</h2><br>
+            <div class="row">
+                <div class="col-4"> <img src="images/category-4.jpeg" height="400px" width="250px">
+                </div>
+                <div class="col-4"> <img src="images/category-1.jpeg" height="400px" width="250px">
+                </div>
+                <div class="col-4"> <img src="images/category-3.jpeg" height="400px" width="250px">
+                </div>
+                <div class="col-4"> <img src="images/category-2.jpg" height="400px" width="250px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fcol-1">
+                    <h3>Download Our App</h3>
+                    <p>Download the app for android and ios mobiles.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" width="165px">
+                        <img src="images/app-store.png" width="165px">
+                    </div>
+                </div>
+
+                <div class="fcol-2">
+                    <img src="images/logo-1-white.png" width="200px" height="200px">
+                    <p>Our Purpose Is To Provide You <br>Best Online Auction Experience.</p>
+                </div>
+
+                <div class="fcol-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Join Affiliate</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="fcol-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100005620965075" target="_blank">Facebook<a></a></li>
+                        <li><a href="https://www.instagram.com/__rahul_pandey__/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahul-pandey-a63a89217/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+    <script src="myscript.js">
+
+     
+    </script>
+</body>
+
+<script type="module" src="firebase.js">
+   
+</script>
+
+</html>
